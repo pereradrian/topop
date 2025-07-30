@@ -1,13 +1,13 @@
 {
-  "name": "Aplicación de Tests - Bomberos Madrid",
-  "short_name": "Tests Bomberos",
-  "description": "Aplicación de tests para oposiciones de Bombero Especialista C1 de la Comunidad de Madrid",
-  "start_url": "/",
+  "name": "Topop - Tests para opositores",
+  "short_name": "Topop",
+  "description": "Aplicación de tests para oposiciones",
+  "start_url": "/topop/",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#dc2626",
   "orientation": "portrait-primary",
-  "scope": "/",
+  "scope": "/topop/",
   "lang": "es",
   "categories": ["education", "productivity"],
   "icons": [
