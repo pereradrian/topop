@@ -3,10 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <script>
-      const path = window.location.pathname;
+      const repoBase = '/topop';
+      const path = window.location.pathname.replace(repoBase, '');
       const search = window.location.search;
       const hash = window.location.hash;
-      const newUrl = '/#' + path + search + hash;
+      const newUrl = repoBase + '/#' + path + search + hash;
       window.location.replace(newUrl);
     </script>
   </head>
