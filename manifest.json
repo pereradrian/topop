@@ -1,10 +1,10 @@
 {
-  "name": "Topop - Tests para opositores",
+  "name": "Topop",
   "short_name": "Topop",
-  "description": "Aplicación de tests para oposiciones",
+  "description": "Tests para opositores",
   "start_url": "/topop/",
   "display": "fullscreen",
-  "background_color": "#ffffff",
+  "background_color": "#0060ff",
   "theme_color": "#0060ff",
   "orientation": "portrait-primary",
   "scope": "/topop/",
