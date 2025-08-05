@@ -3,7 +3,7 @@
   "short_name": "Topop",
   "description": "Tests para opositores",
   "start_url": "/topop/",
-  "display": "fullscreen",
+  "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#ffffff",
   "orientation": "portrait-primary",
