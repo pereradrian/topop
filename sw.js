@@ -11,7 +11,6 @@ const getBaseURL = () => {
 };
 
 const BASE_URL = getBaseURL();
-console.log('[SW] Base URL detected:', BASE_URL);
 
 // Archivos estáticos para cachear (con BASE_URL dinámico)
 const STATIC_FILES = [
@@ -70,17 +69,13 @@ const isInScope = (url) => {
 
 // Instalación del Service Worker
 self.addEventListener('install', (event) => {
-  console.log('[SW] Installing Service Worker...');
-  console.log('[SW] Static files to cache:', STATIC_FILES);
   
   event.waitUntil(
     caches.open(STATIC_CACHE)
       .then((cache) => {
-        console.log('[SW] Caching static files');
         return cache.addAll(STATIC_FILES);
       })
       .then(() => {
-        console.log('[SW] Static files cached successfully');
         return self.skipWaiting();
       })
       .catch((error) => {
@@ -91,7 +86,6 @@ self.addEventListener('install', (event) => {
 
 // Activación del Service Worker
 self.addEventListener('activate', (event) => {
-  console.log('[SW] Activating Service Worker...');
   
   event.waitUntil(
     caches.keys()
